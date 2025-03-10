@@ -1,5 +1,5 @@
 Real-Time Stock Price Collection and Analysis<br>
-<br>
+
 1. Project Aim:<br>
 The goal of this project is to collect real-time stock prices, securely store them, design a model for the data, and load it into a data warehouse for further analysis. I aim to track stock price trends and make it easy to analyze them using SQL queries.
 <br>
