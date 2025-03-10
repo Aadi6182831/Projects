@@ -21,9 +21,9 @@ Writing SQL queries to analyze stock data.<br>
 <br>
 <br>
 4. The Process:<br>
-Step 1: API Scraping (Stock Market Data) I used the Yahoo Finance API to gather real-time stock prices, volumes, and company details. I stored the data in a simple file format like JSON or CSV for easy access.
+Step 1: API Scraping (Stock Market Data) I used the Yahoo Finance API to gather real-time stock prices, volumes, and company details. I stored the data in a simple file format like JSON or CSV for easy access.<br>
 <br>
-Step 2: Encrypt & Store Data in SFTP The data collected was encrypted using PGP to keep it secure. I used paramiko to upload the encrypted files to an SFTP server for storage.
+Step 2: Encrypt & Store Data in SFTP The data collected was encrypted using PGP to keep it secure. I used paramiko to upload the encrypted files to an SFTP server for storage.<br>
 <br>
 Step 3: Design a Dimensional Model I created a database model with:<br>
 A fact table called stock_prices that stores stock prices, volume, open/close values, and timestamps.<br>
@@ -32,13 +32,13 @@ Dimension tables like companies for storing company details and dates for storin
 Step 4: Load Data into a Data Warehouse The encrypted data was pulled from the SFTP server, decrypted, and loaded into PostgreSQL. I then used SQL queries to analyze stock trends over time.<br>
 <br>
 <br>
-5. Challenges I Faced:<br>
+6. Challenges I Faced:<br>
 Learning how to securely encrypt data and work with SFTP was difficult at first.<br>
 Designing the database model was tricky, especially deciding which data to include in the fact and dimension tables.<br>
 Writing SQL queries for analysis took some time to master.<br>
 <br>
 <br>
-6. How I Overcame the Challenges:<br>
+7. How I Overcame the Challenges:<br>
 I researched online resources and tutorials to understand encryption and SFTP better.<br>
 I studied dimensional modeling and practiced building models with different data sets.<br>
 I practiced writing SQL queries daily to get better at analyzing data and understanding trends.<br>
