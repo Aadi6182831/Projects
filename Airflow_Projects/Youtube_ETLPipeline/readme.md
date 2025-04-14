@@ -33,12 +33,6 @@ Built-in logging and error handling for smooth runs<br>
 
 
 
-Lessons Learned: <br>
-How to interact with external APIs like YouTube Data API <br>
-Writing and scheduling DAGs in Apache Airflow <br>
-Using AWS S3 and Boto3 for cloud storage <br>
-Structuring ETL pipelines cleanly in Python <br>
-
 
 
 Challenges Overcome: <br>
