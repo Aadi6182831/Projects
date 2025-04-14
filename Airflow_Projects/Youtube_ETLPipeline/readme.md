@@ -15,46 +15,46 @@ Here's a simple hand-drawn-style architecture to show how data flows in this pro
 
 
 Tech Stack:<br>
-Apache Airflow            –  for scheduling and orchestrating the pipeline
-Python                    –  core logic for ETL
-YouTube Data API v3       –  for fetching video data
-Pandas                    –  for transforming data
-AWS S3                    –  for storing processed data
-Boto3                     –  for interacting with AWS services
+Apache Airflow            –  for scheduling and orchestrating the pipeline <br>
+Python                    –  core logic for ETL <br>
+YouTube Data API v3       –  for fetching video data <br>
+Pandas                    –  for transforming data <br>
+AWS S3                    –  for storing processed data <br>
+Boto3                     –  for interacting with AWS services <br>
 
 
 How to Install & Run Locally:<br>
 1.Clone this repository <br>
-git clone https://github.com/your-username/youtube-etl-airflow.git
-cd youtube-etl-airflow
+git clone https://github.com/your-username/youtube-etl-airflow.git <br>
+cd youtube-etl-airflow <br>
 
 2.Set up environment variables<br>
 Add your YOUTUBE_API_KEY <br>
-Add your AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and S3_BUCKET_NAME
+Add your AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and S3_BUCKET_NAME <br>
 
 
 3.Install dependencies<br>
-pip install -r requirements.txt
+pip install -r requirements.txt <br>
 
 
 4.Start Airflow (example for standalone mode)<br>
-airflow standalone
+airflow standalone <br>
 
 
 5.Access Airflow UI<br>
-Open http://localhost:8080 in browser
+Open http://localhost:8080 in browser <br>
 
 
 requirements.txt :<br>
-apache-airflow
-pandas
-boto3
-google-api-python-client
-python.env
+apache-airflow <br>
+pandas <br>
+boto3 <br>
+google-api-python-client <br>
+python.env <br>
 
 
 
-Key Features:
+Key Features: <br>
 Fetches and stores real-time YouTube video data<br>
 Runs on a set schedule with Airflow DAGs<br>
 Stores data securely in AWS S3 in .csv format<br>
@@ -63,14 +63,14 @@ Built-in logging and error handling for smooth runs<br>
 
 
 
-Lessons Learned:
+Lessons Learned: <br>
 How to interact with external APIs like YouTube Data API <br>
 Writing and scheduling DAGs in Apache Airflow <br>
 Using AWS S3 and Boto3 for cloud storage <br>
 Structuring ETL pipelines cleanly in Python <br>
 
 
-Challenges Overcome:
+Challenges Overcome: <br>
 Configuring Airflow correctly on EC2 and locally <br>
 Managing security groups and SSH access on AWS<br>
 Figuring out how to parse and clean nested YouTube API responses <br>
