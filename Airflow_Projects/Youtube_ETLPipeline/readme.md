@@ -45,7 +45,7 @@ airflow standalone <br>
 Open http://localhost:8080 in browser <br>
 
 
-requirements.txt :<br>
+Requirements.txt :<br>
 apache-airflow <br>
 pandas <br>
 boto3 <br>
@@ -70,11 +70,13 @@ Using AWS S3 and Boto3 for cloud storage <br>
 Structuring ETL pipelines cleanly in Python <br>
 
 
+
 Challenges Overcome: <br>
 Configuring Airflow correctly on EC2 and locally <br>
 Managing security groups and SSH access on AWS<br>
 Figuring out how to parse and clean nested YouTube API responses <br>
 Troubleshooting missing video stats for certain IDs <br>
+
 
 
 Business Application : <br>
