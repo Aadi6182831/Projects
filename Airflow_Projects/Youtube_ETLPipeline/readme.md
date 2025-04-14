@@ -23,36 +23,6 @@ AWS S3                    –  for storing processed data <br>
 Boto3                     –  for interacting with AWS services <br>
 
 
-How to Install & Run Locally:<br>
-1.Clone this repository <br>
-git clone https://github.com/your-username/youtube-etl-airflow.git <br>
-cd youtube-etl-airflow <br>
-
-2.Set up environment variables<br>
-Add your YOUTUBE_API_KEY <br>
-Add your AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and S3_BUCKET_NAME <br>
-
-
-3.Install dependencies<br>
-pip install -r requirements.txt <br>
-
-
-4.Start Airflow (example for standalone mode)<br>
-airflow standalone <br>
-
-
-5.Access Airflow UI<br>
-Open http://localhost:8080 in browser <br>
-
-
-Requirements.txt :<br>
-apache-airflow <br>
-pandas <br>
-boto3 <br>
-google-api-python-client <br>
-python.env <br>
-
-
 
 Key Features: <br>
 Fetches and stores real-time YouTube video data<br>
