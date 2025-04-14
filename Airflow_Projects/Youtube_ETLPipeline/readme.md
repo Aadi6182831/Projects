@@ -1,40 +1,20 @@
-#YouTube Data ETL Pipeline with Airflow and AWS<br><br>
+YouTube Data ETL Pipeline with Airflow and AWS<br><br>
 
 
 
-##Overview:<br>
+Overview:<br>
 This project extracts data from the YouTube API, transforms it into a structured format using pandas, and loads it into an AWS S3 bucket. <br>
 It was built to automate the process of collecting video insights like views, likes, and comments—useful for content analysis, reporting, and data-driven decisions.<br>
 
-##Data Architecture:<br>
+Data Architecture:<br>
 Here's a simple hand-drawn-style architecture to show how data flows in this project:<br>
-
-       ┌──────────────┐
-       │  Airflow DAG │
-       └──────┬───────┘
-              │
-              ▼
- ┌─────────────────────────┐
- │ Extract: YouTube API    │◄─── video_id input
- └─────────────────────────┘
-              │
-              ▼
- ┌─────────────────────────┐
- │ Transform: pandas DF    │
- └─────────────────────────┘
-              │
-              ▼
- ┌─────────────────────────────┐
- │ Load: Upload to AWS S3      │
- └─────────────────────────────┘
-
 
 ![Airflow Project Architecture](https://github.com/user-attachments/assets/23b9a45a-21e9-4f59-94d4-0b4eb87bb009)<br>
 
 
 
 
-##Tech Stack:<br>
+Tech Stack:<br>
 Apache Airflow            –  for scheduling and orchestrating the pipeline
 Python                    –  core logic for ETL
 YouTube Data API v3       –  for fetching video data
@@ -43,29 +23,29 @@ AWS S3                    –  for storing processed data
 Boto3                     –  for interacting with AWS services
 
 
-##How to Install & Run Locally:<br>
-###1.Clone this repository <br>
+How to Install & Run Locally:<br>
+1.Clone this repository <br>
 git clone https://github.com/your-username/youtube-etl-airflow.git
 cd youtube-etl-airflow
 
-###2.Set up environment variables<br>
+2.Set up environment variables<br>
 Add your YOUTUBE_API_KEY <br>
 Add your AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and S3_BUCKET_NAME
 
 
-###3.Install dependencies<br>
+3.Install dependencies<br>
 pip install -r requirements.txt
 
 
-###4.Start Airflow (example for standalone mode)<br>
+4.Start Airflow (example for standalone mode)<br>
 airflow standalone
 
 
-###5.Access Airflow UI<br>
+5.Access Airflow UI<br>
 Open http://localhost:8080 in browser
 
 
-##requirements.txt :<br>
+requirements.txt :<br>
 apache-airflow
 pandas
 boto3
@@ -74,7 +54,7 @@ python.env
 
 
 
-##Key Features:
+Key Features:
 Fetches and stores real-time YouTube video data<br>
 Runs on a set schedule with Airflow DAGs<br>
 Stores data securely in AWS S3 in .csv format<br>
@@ -83,21 +63,21 @@ Built-in logging and error handling for smooth runs<br>
 
 
 
-##Lessons Learned:
+Lessons Learned:
 How to interact with external APIs like YouTube Data API <br>
 Writing and scheduling DAGs in Apache Airflow <br>
 Using AWS S3 and Boto3 for cloud storage <br>
 Structuring ETL pipelines cleanly in Python <br>
 
 
-##Challenges Overcome:
+Challenges Overcome:
 Configuring Airflow correctly on EC2 and locally <br>
 Managing security groups and SSH access on AWS<br>
 Figuring out how to parse and clean nested YouTube API responses <br>
 Troubleshooting missing video stats for certain IDs <br>
 
 
-##Business Application : <br>
+Business Application : <br>
 This pipeline can help content creators, marketing teams, and data analysts automate the process of tracking video performance on YouTube. <br>
 By scheduling regular updates, it ensures access to fresh data without manual effort, enabling better decisions based on audience engagement.
 
